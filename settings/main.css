@@ -1,0 +1,16 @@
+.settings-box {
+    height:80px;
+    width:200px;
+    background-color:lightblue;
+    opacity: 85%;
+    border-color:black;
+    color:purple;
+    border-color:black;
+    text-align: center;
+}
+.game-headings {
+    font-size:75px!important;
+}
+.settings-input {
+    width:30%;
+}
