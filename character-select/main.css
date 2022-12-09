@@ -45,22 +45,31 @@
         border-radius: 15%;
         margin:auto;
         margin-bottom: 50px;
+        position: relative;
+        overflow: hidden;
     }
     .charcter-container > div {
-        background-color:green;
+        background-color:purple;
         width:100%;
-        bottom: 0px;
-        height:10%;
+        height:15%;
         margin:auto;
         margin-top:90%;
-        border-radius: 35%;
+        bottom:0px;
+        right:0px;
+        position: absolute;
         
         
     }
     .charcter-container > div > span {
-        float:left;
+        display: flex;
+        justify-content: center;
+        color:white;
     }
-  
+    .context-headings {
+        text-align:center;
+        color:purple;
+        
+    }
 
 
     
