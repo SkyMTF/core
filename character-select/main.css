@@ -1,0 +1,83 @@
+/*Phone CSS*/
+@media only screen and (min-width: 300px) {
+    .game-headings {
+        text-align: center;
+        font-size:50px;
+        margin-bottom: 100px;
+        font-family: 'Common Pixel', sans-serif;
+        color:purple;
+    }
+    
+    ul {
+        list-style: none;
+    }
+
+    button {
+        height: 80px;
+        width: 200px;
+        background-color: purple;
+        display:block;
+        margin-bottom: 50px;
+        margin:auto;
+        margin-bottom: 50px;
+        color:white;
+        opacity: 85%;
+        text-align: center;
+        }
+    button:hover {
+        opacity: 50%;
+    }
+    }
+    
+
+    body {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:100%;
+
+    }
+    .charcter-container {
+        height: 200px;
+        width: 200px;
+        display:grid;
+        border: 5px solid black;
+        border-radius: 15%;
+        margin:auto;
+        margin-bottom: 50px;
+    }
+    .charcter-container > div {
+        background-color:green;
+        width:100%;
+        bottom: 0px;
+        height:10%;
+        margin:auto;
+        margin-top:90%;
+        border-radius: 35%;
+        
+        
+    }
+    .charcter-container > div > span {
+        float:left;
+    }
+  
+
+
+    
+
+    
+    
+    
+
+/*Desktop CSS*/
+@media only screen and (min-width: 768px) {
+    .charcter-container {
+        width:300px;
+        height:300px;
+        justify-content: left;
+        margin: 0%;
+        margin-top:50px;
+        margin-left:20px;
+    }
+   
+}
