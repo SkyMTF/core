@@ -8,26 +8,28 @@
         color:purple;
     }
     
-    #main-menu-buttons {
-        display: flex;
-        justify-content: center;
-    }
+    
     
     
     #main-menu-buttons > ul {
         list-style: none;
+        padding-left:0;
+        
 }
     #main-menu-buttons > ul > li  {
         margin-bottom: 20px;
     }
     #main-menu-buttons > ul > li > button {
-        height:80px;
-        width:200px;
-        background-color:purple;
-        opacity: 85%;
-        border-color:black;
+        height: 80px;
+        width: 200px;
+        background-color: purple;
+        display:block;
+        margin-bottom: 50px;
+        margin:auto;
+        margin-bottom: 50px;
         color:white;
-
+        opacity: 85%;
+        text-align: center;
     }
     #main-menu-buttons > ul > li > button:hover {
         opacity: 50%;
