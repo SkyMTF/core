@@ -22,13 +22,11 @@ window.onload = function() {
         if(Notification.permission === "denied") {
             window.alert('You have denied permissions, Please reset your permissions and try again');
             notifcationcheck.checked = false;
-        }
-        
+        }    
     })
 }
 //Saves Settings to Local Storage
 function settingssaver() {
-
     var NotificationOn = new Boolean(false);
     var soundOn = new Boolean(false);
     var textspeed = document.getElementById('textspeed').value; 
@@ -45,12 +43,7 @@ function settingssaver() {
         soundOn = Boolean(false);
     }
     localStorage.setItem('settings', JSON.stringify({notifcationstatus: NotificationOn, soundstatus: soundOn, speedtext: textspeed}));
-    location.href = "../index.html";
-
-
-
-    
-    
+    location.href = "../index.html";   
 }
 //Loads Settings from Local Storage
 function LoadSettings() {
@@ -66,8 +59,4 @@ function LoadSettings() {
         sounds.checked = true;
     }
     textspeed.value = settings.speedtext;
-
-    
-
-
 }
