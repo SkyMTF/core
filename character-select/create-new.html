@@ -9,32 +9,22 @@
     <title>Create New Charcter</title>
     </head>
     <body>
-        <h1 class="game-headings">Create New Charcter</h1>
+        <h1 class="game-headings" id="char-header">Create New Charcter</h1>
         <h2 class="context-headings" id="Start-Skill-Point">15</h2>
-        <form>
-            <label for="charname">Charcter Name</label>
-            <input type="text" id="charname" aria-label="Enter a charcter name">
-            <div class="skill-container">
-                <p>Charsima</p>
-                <input type="number" id="charisma-num" aria-label="Select your charisma level">
-            </div>
-            <div class="skill-container">
-                <p>Speech</p>
-                <input type="number" id="speech-num" aria-label="Select your speech level">
-            </div>
-            <div class="skill-container">
-                <p>Strength</p>
-                <input type="number" id="strength-num" aria-label="select your Strength level">
-            </div>
-            <div class="skill-container">
-                <p>luck</p>
-                <input type="number" id="luck-num" aria-label="select your luck level">
-            </div>
-            <div class="skill-container">
-                <p>Intelligence</p>
-                <input type="number" id="intelligence-num" aria-label="select your intelligence level">
-            </div>
-        </form>
+        <div class = charcter-info>
+            <form id="information">
+                <label>Enter Character Name</label>
+                <input type="text" name="character-name" placeholder="character-name">
+                <label>Luck</label>
+                <input name="luck-skill" id="luck-skill" type="number">
+                <label>Speech</label>
+                <input name="speech-skill" id="speech-skill" type="number">
+                <label>Strength</label>
+                <input name="strength-skill" id="strength-skill" type="number">
+                <label>Intelligence</label>
+                <input name="intelligence-skill" id="intelligence-skill" type="number">
+            </form>
+        </div>
         <button>Create</button>
         <button>Random</button>
         <button onclick="location.href='charcter-select.html'">Quit</button>

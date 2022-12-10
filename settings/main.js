@@ -30,6 +30,10 @@ function settingssaver() {
     var NotificationOn = new Boolean(false);
     var soundOn = new Boolean(false);
     var textspeed = document.getElementById('textspeed').value; 
+    if (textspeed > 2 || textspeed < 1) {
+        window.alert("Please enter 1 or 2");
+        return;
+    }
     if (document.getElementById('notifcations-toggler').checked === true) {
         NotificationOn = Boolean(true);
     }
@@ -47,11 +51,27 @@ function settingssaver() {
 }
 //Loads Settings from Local Storage
 function LoadSettings() {
+    if (localStorage.getItem('settings') === null) {
+        return;
+    }
     const settings = JSON.parse(localStorage.getItem('settings'));
     var sounds = document.getElementById('sounds');
     var textspeed = document.getElementById('textspeed');
     var notifcationcheck = document.getElementById('notifcations-toggler');
-    if (Notification.permission === "granted" && settings.notifcationstatus === true) {
+    var notifer = null;
+    //code added for browsers that don't support notifcations 
+    if(!("Notification" in window)) {
+        console.log("this device does not support notifcations");
+        var notifer = {permission: "denied"};
+        let notifcationcontainer = document.getElementById('notifcation-box')
+        notifcationcontainer.style.display = 'none';
+    }
+    else {
+        var notifer = {permission: Notification.permission}; 
+    }
+
+    
+    if (notifer.permission === "granted" && settings.notifcationstatus === true) {
         notifcationcheck.checked = true;
     }
     if (settings.soundstatus === true) {

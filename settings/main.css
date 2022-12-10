@@ -12,11 +12,17 @@
 
 }
 .game-headings {
-    font-size:75px!important;
+    font-size:48px!important;
 }
 .settings-input {
     width:30%;
 }
 ul {
     padding-left:0;
+}
+/*Desktop CSS*/
+@media only screen and (min-width: 768px) {
+    .game-headings {
+        font-size:75!important;
+    }
 }

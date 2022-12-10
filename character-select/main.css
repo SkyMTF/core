@@ -38,6 +38,7 @@
         margin:0;
         height:100%;
         width:100%;
+        margin:0;
 
     }
     .charcter-container {
@@ -67,20 +68,32 @@
         justify-content: center;
         color:white;
     }
+    #char-header {
+        margin-bottom: 0px !important;
+    }
     .context-headings {
         text-align:center;
         color:purple;
  
     }
-    form {
-        margin:auto;
-        display: table;
-        justify-content: center;
-    }
-    form > div {
-        margin:auto;
-        
-    }
+   .charcter-info {
+    display: flex;
+    justify-content: center;
+   }
+   .charcter-info > form > label {
+    display: block;
+    text-align: center;
+    color:purple;
+
+   }
+   .charcter-info > form > input {
+    display: block;
+    border: 5px solid black;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    
+   }
+   
 
 
     
@@ -93,6 +106,7 @@
 @media only screen and (min-width: 768px) {
     .charcter-container {
         display: grid;
+        vertical-align: middle;
     }
 
 
