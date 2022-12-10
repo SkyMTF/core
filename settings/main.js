@@ -54,7 +54,6 @@ function LoadSettings() {
     if (Notification.permission === "granted" && settings.notifcationstatus === true) {
         notifcationcheck.checked = true;
     }
-  
     if (settings.soundstatus === true) {
         sounds.checked = true;
     }
