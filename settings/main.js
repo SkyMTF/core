@@ -63,7 +63,7 @@ function LoadSettings() {
     if(!("Notification" in window)) {
         console.log("this device does not support notifcations");
         var notifer = {permission: "denied"};
-        let notifcationcontainer = document.getElementById('notifcation-box')
+        let notifcationcontainer = document.getElementById('notifcation-box');
         notifcationcontainer.style.display = 'none';
     }
     else {
