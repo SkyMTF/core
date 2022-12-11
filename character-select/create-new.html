@@ -14,18 +14,18 @@
         <div class = charcter-info>
             <form id="information">
                 <label>Enter Character Name</label>
-                <input type="text" name="character-name" placeholder="character-name">
+                <input type="text" name="character-name" placeholder="character-name" id="character-name">
                 <label>Luck</label>
-                <input name="luck-skill" id="luck-skill" type="number">
+                <input name="luck-skill" id="luck-skill" class="input-selector" type="number" min="0" max="15" value="0">
                 <label>Speech</label>
-                <input name="speech-skill" id="speech-skill" type="number">
+                <input name="speech-skill" id="speech-skill" class="input-selector" type="number" min="0" max="15" value="0">
                 <label>Strength</label>
-                <input name="strength-skill" id="strength-skill" type="number">
+                <input name="strength-skill" id="strength-skill" class="input-selector" type="number" min="0" max="15" value="0">
                 <label>Intelligence</label>
-                <input name="intelligence-skill" id="intelligence-skill" type="number">
+                <input name="intelligence-skill" id="intelligence-skill" type="number" min="0" max="15" value="0">
             </form>
         </div>
-        <button>Create</button>
+        <button id="create-button">Create</button>
         <button>Random</button>
         <button onclick="location.href='charcter-select.html'">Quit</button>
         
