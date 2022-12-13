@@ -47,6 +47,10 @@ function charctersave() {
         window.alert("Please Select more skills");
         return;
     }
+    if (skillnumber.innerText < 0){
+        window.alert("You have entered an invalid number for 1 or more skills, please try again!");
+        return;
+    }
     if (JSON.parse(localStorage.getItem('charcters')) === null) {
         console.log('debug function');
         var charcters = [];
@@ -60,15 +64,20 @@ function charctersave() {
     var speechskill = document.querySelector('#speech-skill').value;
     var strengthskill = document.querySelector('#strength-skill').value;
     var intelligenceskill = document.querySelector('#intelligence-skill').value;
+    var level = 0;
     var idnumber = Math.floor(Math.random() * 100) + 1;
+    var locationmap = null;
     charcters.push({name: charctername, 
         luckskills: luckskill, 
         speechskills: speechskill, 
         strengthskills: strengthskill, 
         intelligenceskills: intelligenceskill, 
-        idnumbers: idnumber
+        location: locationmap,
+        idnumbers: idnumber,
+        level: level
     });
     localStorage.setItem('charcters', JSON.stringify(charcters));
+    location.href = 'charcter-select.html';
     
 
 }
