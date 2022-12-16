@@ -12,9 +12,9 @@ function importcharcters() {
         let main_menu_buttons = document.querySelector('#main-menu-buttons');
         console.log('in loop');
         let a_element = document.createElement('a');
-        var div_element = document.createElement('div');
-        var inner_div_elemen = document.createElement('div');
-        var span_element = document.createElement('span');
+        let div_element = document.createElement('div');
+        let inner_div_elemen = document.createElement('div');
+        let span_element = document.createElement('span');
         a_element.setAttribute('href', '#');
         a_element.setAttribute('id', charcters[i].idnumbers);
         div_element.classList.add('charcter-container');
@@ -27,16 +27,16 @@ function importcharcters() {
     //Create onclick listeners 
     for (let i = 0; i < charcters.length; i++){
             console.log('in event lister')
-            var charcters = JSON.parse(localStorage.getItem('charcters'));
-            var idnumers = charcters[i].idnumbers;
+            let charcters = JSON.parse(localStorage.getItem('charcters'));
+            let idnumers = charcters[i].idnumbers;
         document.getElementById(charcters[i].idnumbers).addEventListener("click", function(){SetCharcter(idnumers, charcters)})
         console.log('all done')
     } 
 }
 function SetCharcter() {
     console.log('in setting function now!')
-    var charcters = arguments[1];
-    var idnumber = arguments[0];
+    let charcters = arguments[1];
+    let idnumber = arguments[0];
     console.log(charcters.length)
     for (let i = 0; i < charcters.length; i++) {
         
